@@ -1,4 +1,4 @@
-apiVersion: extensions/v1beta1
+apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: front-end
@@ -21,7 +21,7 @@ spec:
         tier: front
     spec:
       containers:
-      - image: schoolofdevops/frontend:latest
+      - image: microsudo/frontend:latest
         imagePullPolicy: Always
         name: front-end
         ports:

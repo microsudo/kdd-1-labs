@@ -5,7 +5,7 @@ metadata:
 spec:
   containers:
     - name: myfrontend
-      image: schoolofdevops/nginx
+      image: microsudo/nginx
       volumeMounts:
       - mountPath: "/var/www/html"
         name: mypd

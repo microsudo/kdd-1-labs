@@ -1,4 +1,4 @@
-apiVersion: apps/v1beta1
+apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: catalogue
@@ -24,7 +24,7 @@ spec:
           effect: "NoExecute"
       containers:
         - name: catalogue
-          image: schoolofdevops/catalogue:v2
+          image: microsudo/catalogue:v2
           imagePullPolicy: Always
           ports:
             - containerPort: 80

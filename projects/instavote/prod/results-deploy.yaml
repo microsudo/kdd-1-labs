@@ -26,7 +26,7 @@ spec:
     spec:
       containers:
         - name: app
-          image: schoolofdevops/vote-result
+          image: microsudo/vote-result
           ports:
             - containerPort: 80
               protocol: TCP

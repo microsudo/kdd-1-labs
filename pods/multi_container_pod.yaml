@@ -18,7 +18,7 @@ spec:
           mountPath: /var/www/html-sample-app
 
     - name: sync
-      image: schoolofdevops/sync:v2
+      image: microsudo/sync:v2
       volumeMounts:
         - name: data
           mountPath: /var/www/app

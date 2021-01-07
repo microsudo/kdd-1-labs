@@ -19,7 +19,7 @@ spec:
         tier: front
     spec:
       containers:
-      - image: schoolofdevops/vote
+      - image: microsudo/vote
         imagePullPolicy: Always
         name: vote
         ports:

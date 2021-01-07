@@ -1,4 +1,4 @@
-apiVersion: apps/v1beta1
+apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: catalogue-db
@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: catalogue-db
-          image: schoolofdevops/catalogue-db
+          image: microsudo/catalogue-db
           imagePullPolicy: Always
           ports:
             - containerPort: 3306
