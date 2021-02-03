@@ -2,6 +2,8 @@ apiVersion: v1
 kind: Pod
 metadata:
   name: microcolor-pod
+  labels:
+    app: micro-color   
 spec:
   containers:
     - name: micro-color
