@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: simple-webapp-deployment
+  labels:
+    app: App1
+    type: Front-end
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      type: Front-end
+  template:
+    metadata:
+      labels:
+        app: App1
+        type: Front-end
+    spec:
+      containers:
+      - name: my-nginx
+        image: nginx:1.7.1
