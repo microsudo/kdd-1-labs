@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: microcolor-pod
+  labels:
+    app: micro-color 
+spec:
+  containers:
+    - name: micro-color
+      image: microsudo/micro_color:v1
+      ports:
+        - containerPort: 8080
+      env:
+        - name: APP_COLOR
+          value: pink
