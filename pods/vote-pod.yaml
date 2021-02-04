@@ -2,7 +2,3 @@ apiVersion:
 kind: Pod
 metadata:
 spec:
-
-
-
-
